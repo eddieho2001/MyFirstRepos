@@ -1,0 +1,312 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Windows - 6.2.9200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.4.1+9a89d02ff for .NET Framework
+      Build started 26/5/2025 4:43:48 pm.
+      Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.20
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/3.31.5/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.4.1+9a89d02ff for .NET Framework
+      Build started 26/5/2025 4:43:49 pm.
+      Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.03
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/3.31.5/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-jfktfe"
+      binary: "D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-jfktfe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-jfktfe'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_76035.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Build started 26/5/2025 4:43:50 pm.
+        Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jfktfe\\cmTC_76035.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_76035.dir\\Debug\\".
+          Creating directory "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jfktfe\\Debug\\".
+          Creating directory "cmTC_76035.dir\\Debug\\cmTC_76035.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_76035.dir\\Debug\\cmTC_76035.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76035.dir\\Debug\\\\" /Fd"cmTC_76035.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Applicatons\\MinGW\\winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2\\mingw64\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31937 for x64
+          CMakeCCompilerABI.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76035.dir\\Debug\\\\" /Fd"cmTC_76035.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Applicatons\\MinGW\\winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2\\mingw64\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jfktfe\\Debug\\cmTC_76035.exe" /INCREMENTAL /ILK:"cmTC_76035.dir\\Debug\\cmTC_76035.ilk" /NOLOGO /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-jfktfe/Debug/cmTC_76035.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-jfktfe/Debug/cmTC_76035.lib" /MACHINE:X64  /machine:x64 cmTC_76035.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_76035.vcxproj -> D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jfktfe\\Debug\\cmTC_76035.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jfktfe\\Debug\\cmTC_76035.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_76035.dir\\Debug\\cmTC_76035.tlog\\cmTC_76035.write.1u.tlog" "cmTC_76035.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jfktfe\\Debug\\cmTC_76035.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_76035.dir\\Debug\\cmTC_76035.tlog\\cmTC_76035.write.1u.tlog" "cmTC_76035.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jfktfe\\Debug\\cmTC_76035.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_76035.dir\\Debug\\cmTC_76035.tlog\\cmTC_76035.write.1u.tlog" "cmTC_76035.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_76035.dir\\Debug\\cmTC_76035.tlog\\unsuccessfulbuild".
+          Touching "cmTC_76035.dir\\Debug\\cmTC_76035.tlog\\cmTC_76035.lastbuildstate".
+        Done Building Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jfktfe\\cmTC_76035.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.19
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.34.31937.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-g3s73n"
+      binary: "D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-g3s73n"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-g3s73n'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e5734.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Build started 26/5/2025 4:43:52 pm.
+        Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g3s73n\\cmTC_e5734.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_e5734.dir\\Debug\\".
+          Creating directory "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g3s73n\\Debug\\".
+          Creating directory "cmTC_e5734.dir\\Debug\\cmTC_e5734.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_e5734.dir\\Debug\\cmTC_e5734.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_e5734.dir\\Debug\\\\" /Fd"cmTC_e5734.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Applicatons\\MinGW\\winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2\\mingw64\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31937 for x64
+          CMakeCXXCompilerABI.cpp
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_e5734.dir\\Debug\\\\" /Fd"cmTC_e5734.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Applicatons\\MinGW\\winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2\\mingw64\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g3s73n\\Debug\\cmTC_e5734.exe" /INCREMENTAL /ILK:"cmTC_e5734.dir\\Debug\\cmTC_e5734.ilk" /NOLOGO /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-g3s73n/Debug/cmTC_e5734.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-g3s73n/Debug/cmTC_e5734.lib" /MACHINE:X64  /machine:x64 cmTC_e5734.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_e5734.vcxproj -> D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g3s73n\\Debug\\cmTC_e5734.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g3s73n\\Debug\\cmTC_e5734.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e5734.dir\\Debug\\cmTC_e5734.tlog\\cmTC_e5734.write.1u.tlog" "cmTC_e5734.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g3s73n\\Debug\\cmTC_e5734.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e5734.dir\\Debug\\cmTC_e5734.tlog\\cmTC_e5734.write.1u.tlog" "cmTC_e5734.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g3s73n\\Debug\\cmTC_e5734.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e5734.dir\\Debug\\cmTC_e5734.tlog\\cmTC_e5734.write.1u.tlog" "cmTC_e5734.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_e5734.dir\\Debug\\cmTC_e5734.tlog\\unsuccessfulbuild".
+          Touching "cmTC_e5734.dir\\Debug\\cmTC_e5734.tlog\\cmTC_e5734.lastbuildstate".
+        Done Building Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g3s73n\\cmTC_e5734.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.07
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.34.31937.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...

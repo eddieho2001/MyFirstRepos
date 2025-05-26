@@ -1,0 +1,3 @@
+D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/ALL_BUILD.dir
+D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/ZERO_CHECK.dir
+D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/game/CMakeFiles/LightYears.dir

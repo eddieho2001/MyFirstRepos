@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\bin\Debug\LightYears.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
