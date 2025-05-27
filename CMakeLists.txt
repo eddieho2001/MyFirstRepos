@@ -14,11 +14,21 @@ message(STATUS "project level --> PROJECT_BINARY_DIR : ${PROJECT_BINARY_DIR}")
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-#create variable for executable target name
+
+#1. In order to use external library, we using cmake fetch content feature
+include(FetchContent)
+set(SFML_LIB_NAME SFML)
+FetchContent_Declare(
+	${SFML_LIB_NAME} 
+	GIT_REPOSITORY https://github.com/SFML/SFML.git
+	GIT_TAG 3.0.1
+	GIT_SHALLOW FALSE)
+FetchContent_MakeAvailable(${SFML_LIB_NAME})
+
+#1. create variable for executable target name
 set(LIGHTYEARS_GAME_EXE_NAME LightYears)
 
-
-# add sub projects
+#2. add sub projects
 # add_subdirectory(engine)
 add_subdirectory(game) 
 
