@@ -1,11 +1,15 @@
 #include <framework/application.h>
 #include<iostream>
 
-ly::Application::Application(game_config& config):
+ly::Application::Application(const game_config& config):
 	mWindow{sf::RenderWindow{ sf::VideoMode({config.width, config.height}), config.title}},
 	mTargetFrameRate{ config .defaultFrameRate},
-	mTickClock{} //default ctor
+	mTickClock{}, //default ctor
+	mCircle{}
 {
+	mCircle.setRadius(config.height / 8.f);
+	mCircle.setPosition(sf::Vector2f(config.width/8, config.height/8));
+	mCircle.setFillColor(sf::Color::Cyan);
 }
 
 void ly::Application::Run()
@@ -46,6 +50,10 @@ void ly::Application::Tick(float deltaTime)
 
 void ly::Application::Render()
 {
+	mWindow.clear();
+	mWindow.draw(mCircle);
+	mWindow.display();
+
 }
 
 

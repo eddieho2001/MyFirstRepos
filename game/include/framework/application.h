@@ -13,7 +13,7 @@ namespace ly {
 
 	class Application {
 	public:
-		Application(game_config& config);
+		Application(const game_config& config);
 		void Run();
 	private:
 		void Tick(float deltaTime);
@@ -22,5 +22,6 @@ namespace ly {
 		sf::RenderWindow mWindow;
 		float mTargetFrameRate;
 		sf::Clock mTickClock;
+		sf::CircleShape mCircle;
 	};
 }
