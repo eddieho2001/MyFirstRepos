@@ -4,11 +4,22 @@
     <ClCompile Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\src\framework\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include\framework\application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{99FC78E5-C962-38B3-BAAF-635908421514}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{F168B560-1E8A-3DC9-8283-B0CEAF88BEFF}</UniqueIdentifier>
     </Filter>

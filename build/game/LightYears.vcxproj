@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -105,10 +105,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -179,7 +179,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -199,10 +199,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -273,7 +273,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -293,10 +293,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -367,7 +367,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -386,10 +386,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include;D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -517,6 +517,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\src\main.cpp" />
+    <ClInclude Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include\framework\application.h" />
+    <ClCompile Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\src\framework\application.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
