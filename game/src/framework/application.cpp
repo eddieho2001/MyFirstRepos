@@ -4,12 +4,9 @@
 ly::Application::Application(const game_config& config):
 	mWindow{sf::RenderWindow{ sf::VideoMode({config.width, config.height}), config.title}},
 	mTargetFrameRate{ config .defaultFrameRate},
-	mTickClock{}, //default ctor
-	mCircle{}
+	mTickClock{} //default ctor
 {
-	mCircle.setRadius(config.height / 8.f);
-	mCircle.setPosition(sf::Vector2f(config.width/8, config.height/8));
-	mCircle.setFillColor(sf::Color::Cyan);
+
 }
 
 void ly::Application::Run()
@@ -33,8 +30,8 @@ void ly::Application::Run()
 		while (accumulateTime > targetDeltaTime) {
 			std::cout << "Frame rate too slow, update it double" << std::endl;
 			accumulateTime -= targetDeltaTime;
-			Tick(targetDeltaTime);
-			Render();
+			_Tick(targetDeltaTime);
+			_Render();
 		}
 		//renderWin.clear();
 
@@ -43,15 +40,32 @@ void ly::Application::Run()
 	}
 }
 
+
+void ly::Application::Render()
+{
+	sf::CircleShape mCircle;
+	mCircle.setRadius(mWindow.getSize().y / 8.f);
+	//mCircle.setOrigin()
+	mCircle.setPosition(sf::Vector2f(mWindow.getSize().x / 2.f, mWindow.getSize().y / 2.f));
+	mCircle.setFillColor(sf::Color::Cyan);
+	mWindow.draw(mCircle);
+}
+
 void ly::Application::Tick(float deltaTime)
 {
 	std::cout << "Ticking at frame rate: " << 1.f / deltaTime << std::endl;
 }
 
-void ly::Application::Render()
+void ly::Application::_Tick(float deltaTime)
+{
+	Tick(deltaTime);
+	
+}
+
+void ly::Application::_Render()
 {
 	mWindow.clear();
-	mWindow.draw(mCircle);
+	Render();
 	mWindow.display();
 
 }

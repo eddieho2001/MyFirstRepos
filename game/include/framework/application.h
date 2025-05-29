@@ -15,13 +15,16 @@ namespace ly {
 	public:
 		Application(const game_config& config);
 		void Run();
+		
 	private:
-		void Tick(float deltaTime);
-		void Render();
+		void _Tick(float deltaTime);
+		void _Render();
+	protected:
+		virtual void Render();
+		virtual void Tick(float deltaTime);
 	private:
 		sf::RenderWindow mWindow;
 		float mTargetFrameRate;
 		sf::Clock mTickClock;
-		sf::CircleShape mCircle;
 	};
 }
