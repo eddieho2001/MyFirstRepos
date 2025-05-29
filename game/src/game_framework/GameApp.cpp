@@ -1,9 +1,15 @@
 #include "game_framework/GameApp.h"
 
 ly::Application* GetApplication() {
-	return new ly::GameApp{};
+	//static ly::Application app;
+	
+	ly::game_config config;
+	return new ly::GameApp{ config };
 }
 
 namespace ly {
-
+	GameApp::GameApp(game_config& config) :
+		ly::Application{ config }
+	{
+	}
 };

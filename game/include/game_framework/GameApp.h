@@ -3,8 +3,8 @@
 
 namespace ly {
 	class GameApp : public Application {
-	
-
+	public:
+		GameApp(game_config& config );
 
 	};
 }
