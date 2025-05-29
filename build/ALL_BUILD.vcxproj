@@ -178,13 +178,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{6C3522F8-6AFE-386C-83C7-01ABB5863E24}</Project>
       <Name>FLAC</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\game\LightYears.vcxproj">
-      <Project>{9E439A3A-546D-3643-92EA-742DB3045654}</Project>
-      <Name>LightYears</Name>
+    <ProjectReference Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\engine\engine.vcxproj">
+      <Project>{A5A0F3E1-878E-367C-AC40-F3B0E6CF05F1}</Project>
+      <Name>engine</Name>
     </ProjectReference>
     <ProjectReference Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\freetype-build\freetype.vcxproj">
       <Project>{E130B19F-F0C1-316D-9BC7-0F091855CC66}</Project>
       <Name>freetype</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\game\game.vcxproj">
+      <Project>{BE0ED371-D7D2-3D25-8ABD-AAFDDE50244D}</Project>
+      <Name>game</Name>
     </ProjectReference>
     <ProjectReference Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\ogg-build\ogg.vcxproj">
       <Project>{F1E40EB3-74F8-3CC8-8932-5B071603AA62}</Project>

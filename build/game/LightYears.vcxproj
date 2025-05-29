@@ -516,9 +516,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\src\main.cpp" />
     <ClInclude Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include\framework\application.h" />
     <ClCompile Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\src\framework\application.cpp" />
+    <ClInclude Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\include\EntryPoint.h" />
+    <ClCompile Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\game\src\EntryPoint.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

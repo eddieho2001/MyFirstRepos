@@ -25,10 +25,12 @@ FetchContent_Declare(
 	GIT_SHALLOW FALSE)
 FetchContent_MakeAvailable(${SFML_LIB_NAME})
 
-#1. create variable for executable target name
-set(LIGHTYEARS_GAME_EXE_NAME LightYears)
+#1. create variable for two targets: game & engine
+set(LIGHTYEARS_ENGINE_TARGET_NAME engine)
+set(LIGHTYEARS_GAME_TARGET_NAME game)
+
 
 #2. add sub projects
-# add_subdirectory(engine)
+add_subdirectory(engine)
 add_subdirectory(game) 
 
