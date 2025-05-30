@@ -194,6 +194,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{F1E40EB3-74F8-3CC8-8932-5B071603AA62}</Project>
       <Name>ogg</Name>
     </ProjectReference>
+    <ProjectReference Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\quill\quill.vcxproj">
+      <Project>{1D233B20-01D2-338C-8975-4AE024942D9F}</Project>
+      <Name>quill</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
     <ProjectReference Include="D:\MyDocs\GameDev\Udemy\LearnC++AndMakeaGameFromScratch\Section06\LightYearsGameProj\build\_deps\sfml-build\src\SFML\Audio\sfml-audio.vcxproj">
       <Project>{2AB6C322-6117-3BA2-910E-E7788EFEBF7A}</Project>
       <Name>sfml-audio</Name>

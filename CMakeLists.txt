@@ -14,6 +14,7 @@ message(STATUS "project level --> PROJECT_BINARY_DIR : ${PROJECT_BINARY_DIR}")
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(QUILL_LIB_NAME quill) 
 
 #1. In order to use external library, we using cmake fetch content feature
 include(FetchContent)
@@ -25,11 +26,19 @@ FetchContent_Declare(
 	GIT_SHALLOW FALSE)
 FetchContent_MakeAvailable(${SFML_LIB_NAME})
 
+#set(SLOG_LIB_NAME SLOG)
+#FetchContent_Declare(
+#	${SLOG_LIB_NAME} 
+#	GIT_REPOSITORY https://github.com/kala13x/slog.git
+#	GIT_TAG v1.8.48
+#	GIT_SHALLOW FALSE)
+#FetchContent_MakeAvailable(${SLOG_LIB_NAME})
+
 #1. create variable for two targets: game & engine
 set(LIGHTYEARS_ENGINE_TARGET_NAME engine)
 set(LIGHTYEARS_GAME_TARGET_NAME game)
 
-
+add_subdirectory(quill)
 #2. add sub projects
 add_subdirectory(engine)
 add_subdirectory(game) 

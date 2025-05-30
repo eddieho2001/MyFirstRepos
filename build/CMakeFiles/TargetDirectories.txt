@@ -51,6 +51,10 @@ D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGame
 D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir
 D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/vorbis-build/lib/CMakeFiles/PACKAGE.dir
 D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/vorbis-build/lib/CMakeFiles/INSTALL.dir
+D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/quill/CMakeFiles/quill.dir
+D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/quill/CMakeFiles/PACKAGE.dir
+D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/quill/CMakeFiles/INSTALL.dir
+D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/quill/CMakeFiles/ALL_BUILD.dir
 D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/engine/CMakeFiles/engine.dir
 D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/engine/CMakeFiles/PACKAGE.dir
 D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/engine/CMakeFiles/INSTALL.dir

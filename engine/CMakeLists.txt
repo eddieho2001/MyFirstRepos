@@ -5,13 +5,16 @@ add_library(${LIGHTYEARS_ENGINE_TARGET_NAME} STATIC
 	${CMAKE_CURRENT_SOURCE_DIR}/src/framework/application.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/include/EntryPoint.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/EntryPoint.cpp
-
+	${CMAKE_CURRENT_SOURCE_DIR}/include/framework/core.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/framework/core.cpp
 )
 
 #7. start to add application logic to game, we need to tell cmake where to find the included header files by using target_include_directories command
 target_include_directories(${LIGHTYEARS_ENGINE_TARGET_NAME}
 	PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
+
+target_include_directories(${LIGHTYEARS_ENGINE_TARGET_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/${QUILL_LIB_NAME}/include)
 
 #Remark: because the linking of lib files to application belong here, so that copy them to here 
 #4. After fetch lib we also  need to setup the linking 
@@ -21,7 +24,7 @@ target_link_libraries(${LIGHTYEARS_ENGINE_TARGET_NAME} PUBLIC sfml-main)
 target_link_libraries(${LIGHTYEARS_ENGINE_TARGET_NAME} PUBLIC sfml-network)
 target_link_libraries(${LIGHTYEARS_ENGINE_TARGET_NAME} PUBLIC sfml-system)
 target_link_libraries(${LIGHTYEARS_ENGINE_TARGET_NAME} PUBLIC sfml-window)
-
+target_link_libraries(${LIGHTYEARS_ENGINE_TARGET_NAME} PUBLIC quill::quill)
 #5. we also need to add a copy of dll files to runtime build directory for avoid manually copy referenced dll libraries
 #add_custom_command(TARGET ${LIGHTYEARS_ENGINE_TARGET_NAME} 
 #	POST_BUILD

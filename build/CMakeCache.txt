@@ -316,6 +316,10 @@ FETCHCONTENT_SOURCE_DIR_OGG:PATH=
 FETCHCONTENT_SOURCE_DIR_SFML:PATH=
 
 //When not empty, overrides where to find pre-populated content
+// for SLOG
+FETCHCONTENT_SOURCE_DIR_SLOG:PATH=
+
+//When not empty, overrides where to find pre-populated content
 // for vorbis
 FETCHCONTENT_SOURCE_DIR_VORBIS:PATH=
 
@@ -333,6 +337,9 @@ FETCHCONTENT_UPDATES_DISCONNECTED_OGG:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of SFML
 FETCHCONTENT_UPDATES_DISCONNECTED_SFML:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of SLOG
+FETCHCONTENT_UPDATES_DISCONNECTED_SLOG:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of vorbis
 FETCHCONTENT_UPDATES_DISCONNECTED_VORBIS:BOOL=OFF
@@ -381,6 +388,74 @@ PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+
+//Enable this option to build the benchmarks.
+QUILL_BUILD_BENCHMARKS:BOOL=OFF
+
+//Enable this option to build and install the examples. Set this
+// to ON to include example projects in the build process and have
+// them installed after configuring with CMake.
+QUILL_BUILD_EXAMPLES:BOOL=OFF
+
+//Enable this option to build the test suite.
+QUILL_BUILD_TESTS:BOOL=OFF
+
+//Enable code coverage analysis during the build.
+QUILL_CODE_COVERAGE:BOOL=OFF
+
+//Disable the use of __FILE__ and __LINE__ in `LOG_*` macros when
+// the file name and the line number are not needed.
+QUILL_DISABLE_FILE_INFO:BOOL=OFF
+
+//Disable the use of __FUNCTION__ in `LOG_*` macros when the function
+// name is not needed.
+QUILL_DISABLE_FUNCTION_NAME:BOOL=OFF
+
+//Enable this option to disable non-prefixed `LOG_*` macros, keeping
+// only the `QUILL_LOG_*` macros to avoid conflicts with other
+// logging libraries.
+QUILL_DISABLE_NON_PREFIXED_MACROS:BOOL=OFF
+
+//Generate documentation during the build process.
+QUILL_DOCS_GEN:BOOL=OFF
+
+//Enable extensive tests that may require more resources and are
+// not suitable for hosted CI runners.
+QUILL_ENABLE_EXTENSIVE_TESTS:BOOL=OFF
+
+//Enable the CMake install target when Quill is not the master
+// project.
+QUILL_ENABLE_INSTALL:BOOL=OFF
+
+//Master Project
+QUILL_MASTER_PROJECT:BOOL=FALSE
+
+//Enable this option to build without exception handling support.
+QUILL_NO_EXCEPTIONS:BOOL=OFF
+
+//Enable this option to disable features that require thread name
+// retrieval, ensuring compatibility with older Windows versions
+// (e.g., Windows Server 2012/2016) and Android.
+QUILL_NO_THREAD_NAME_SUPPORT:BOOL=OFF
+
+//Enable AddressSanitizer (ASan) for memory error detection in
+// tests.
+QUILL_SANITIZE_ADDRESS:BOOL=OFF
+
+//Enable ThreadSanitizer (TSan) for detecting thread-related issues
+// in tests. Note: Using this option with non-Clang compilers may
+// produce false positives.
+QUILL_SANITIZE_THREAD:BOOL=OFF
+
+//Use Valgrind as the default memory checking tool in CTest. Valgrind
+// must be installed.
+QUILL_USE_VALGRIND:BOOL=OFF
+
+//Enable x86-specific optimizations for cache coherence using _mm_prefetch,
+// _mm_clflush, and _mm_clflushopt instructions. Ensure the target
+// architecture must also be specified with -march="..." when enabling
+// this option.
+QUILL_X86ARCH:BOOL=OFF
 
 //Value Computed by CMake
 SFML_BINARY_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/sfml-build
@@ -465,6 +540,24 @@ libogg_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 libogg_SOURCE_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/ogg-src
+
+//Value Computed by CMake
+quill_BINARY_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/quill
+
+//Value Computed by CMake
+quill_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+quill_SOURCE_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/quill
+
+//Value Computed by CMake
+slog_BINARY_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/slog-build
+
+//Value Computed by CMake
+slog_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+slog_SOURCE_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/slog-src
 
 //Value Computed by CMake
 vorbis_BINARY_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/vorbis-build
@@ -607,7 +700,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
@@ -777,6 +870,7 @@ OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+QUILL_ENABLE_GCC_HARDENING:INTERNAL=OFF
 //CHECK_TYPE_SIZE: sizeof(short)
 SHORT_SIZE:INTERNAL=2
 //CHECK_TYPE_SIZE: sizeof(uint16_t)

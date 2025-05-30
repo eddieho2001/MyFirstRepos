@@ -1,11 +1,18 @@
 #include <framework/application.h>
-#include<iostream>
+
+#include<quill/Frontend.h>
+#include<quill/LogMacros.h>
+#include<quill/sinks/ConsoleSink.h>
 
 ly::Application::Application(const game_config& config):
 	mWindow{sf::RenderWindow{ sf::VideoMode({config.width, config.height}), config.title}},
 	mTargetFrameRate{ config .defaultFrameRate},
 	mTickClock{} //default ctor
 {
+	
+	mlogger = quill::Frontend::create_or_get_logger("app_log", quill::Frontend::create_or_get_sink<quill::ConsoleSink>("sink_id_1"));
+	mlogger->set_immediate_flush(true);
+
 
 }
 
@@ -26,9 +33,11 @@ void ly::Application::Run()
 		 * trigger the condition and call render it.
 		 */
 		accumulateTime += mTickClock.restart().asSeconds();
-		std::cout << "accumulateTime=" << accumulateTime <<", targetDeltaTime="<< targetDeltaTime << std::endl;
+		//std::cout << "accumulateTime=" << accumulateTime <<", targetDeltaTime="<< targetDeltaTime << std::endl;
+		LOG_INFO(mlogger, "accumulateTime({}), targetDeltaTime({}) ", accumulateTime, targetDeltaTime);
 		while (accumulateTime > targetDeltaTime) {
-			std::cout << "Frame rate too slow, update it double" << std::endl;
+			
+			//std::cout << "Frame rate too slow, update it double" << std::endl;
 			accumulateTime -= targetDeltaTime;
 			_Tick(targetDeltaTime);
 			_Render();
@@ -53,7 +62,7 @@ void ly::Application::Render()
 
 void ly::Application::Tick(float deltaTime)
 {
-	std::cout << "Ticking at frame rate: " << 1.f / deltaTime << std::endl;
+	//std::cout << "Ticking at frame rate: " << 1.f / deltaTime << std::endl;
 }
 
 void ly::Application::_Tick(float deltaTime)

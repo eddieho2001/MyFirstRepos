@@ -1,5 +1,7 @@
 #pragma once
 #include<SFML/Graphics.hpp>
+#include<quill/Logger.h>
+
 
 namespace ly {
 
@@ -22,9 +24,11 @@ namespace ly {
 	protected:
 		virtual void Render();
 		virtual void Tick(float deltaTime);
+		quill::Logger* mlogger;
 	private:
 		sf::RenderWindow mWindow;
 		float mTargetFrameRate;
 		sf::Clock mTickClock;
+
 	};
 }
