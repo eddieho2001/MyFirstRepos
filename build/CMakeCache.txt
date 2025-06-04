@@ -316,10 +316,6 @@ FETCHCONTENT_SOURCE_DIR_OGG:PATH=
 FETCHCONTENT_SOURCE_DIR_SFML:PATH=
 
 //When not empty, overrides where to find pre-populated content
-// for SLOG
-FETCHCONTENT_SOURCE_DIR_SLOG:PATH=
-
-//When not empty, overrides where to find pre-populated content
 // for vorbis
 FETCHCONTENT_SOURCE_DIR_VORBIS:PATH=
 
@@ -337,9 +333,6 @@ FETCHCONTENT_UPDATES_DISCONNECTED_OGG:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of SFML
 FETCHCONTENT_UPDATES_DISCONNECTED_SFML:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of SLOG
-FETCHCONTENT_UPDATES_DISCONNECTED_SLOG:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of vorbis
 FETCHCONTENT_UPDATES_DISCONNECTED_VORBIS:BOOL=OFF
@@ -549,15 +542,6 @@ quill_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 quill_SOURCE_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/quill
-
-//Value Computed by CMake
-slog_BINARY_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/slog-build
-
-//Value Computed by CMake
-slog_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-slog_SOURCE_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/slog-src
 
 //Value Computed by CMake
 vorbis_BINARY_DIR:STATIC=D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/vorbis-build

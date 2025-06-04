@@ -1,19 +1,19 @@
 #include <framework/application.h>
+#include<framework/world.h>
 
 #include<quill/Frontend.h>
 #include<quill/LogMacros.h>
 #include<quill/sinks/ConsoleSink.h>
 
-ly::Application::Application(const game_config& config):
-	mWindow{sf::RenderWindow{ sf::VideoMode({config.width, config.height}), config.title}},
-	mTargetFrameRate{ config .defaultFrameRate},
-	mTickClock{} //default ctor
+ly::Application::Application(const game_config& config) :
+	mWindow{ sf::RenderWindow{ sf::VideoMode({config.width, config.height}), config.title} },
+	mTargetFrameRate{ config.defaultFrameRate },
+	mTickClock{},
+	currentWorld {nullptr}//default ctor
 {
 	
 	mlogger = quill::Frontend::create_or_get_logger("app_log", quill::Frontend::create_or_get_sink<quill::ConsoleSink>("sink_id_1"));
 	mlogger->set_immediate_flush(true);
-
-
 }
 
 void ly::Application::Run()
@@ -34,7 +34,7 @@ void ly::Application::Run()
 		 */
 		accumulateTime += mTickClock.restart().asSeconds();
 		//std::cout << "accumulateTime=" << accumulateTime <<", targetDeltaTime="<< targetDeltaTime << std::endl;
-		LOG_INFO(mlogger, "accumulateTime({}), targetDeltaTime({}) ", accumulateTime, targetDeltaTime);
+		//LOG_INFO(mlogger, "accumulateTime({}), targetDeltaTime({}) ", accumulateTime, targetDeltaTime);
 		while (accumulateTime > targetDeltaTime) {
 			
 			//std::cout << "Frame rate too slow, update it double" << std::endl;
@@ -67,7 +67,12 @@ void ly::Application::Tick(float deltaTime)
 
 void ly::Application::_Tick(float deltaTime)
 {
+	
 	Tick(deltaTime);
+	if (currentWorld) {
+		currentWorld->BeginPlayInternal();
+		currentWorld->TickInternal(deltaTime);
+	}
 	
 }
 

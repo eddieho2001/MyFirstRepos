@@ -7,6 +7,11 @@ add_library(${LIGHTYEARS_ENGINE_TARGET_NAME} STATIC
 	${CMAKE_CURRENT_SOURCE_DIR}/src/EntryPoint.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/include/framework/core.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/framework/core.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/include/framework/world.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/framework/world.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/include/framework/actor.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/framework/actor.cpp
+
 )
 
 #7. start to add application logic to game, we need to tell cmake where to find the included header files by using target_include_directories command
