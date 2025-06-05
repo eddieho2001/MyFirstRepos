@@ -11,6 +11,9 @@ add_library(${LIGHTYEARS_ENGINE_TARGET_NAME} STATIC
 	${CMAKE_CURRENT_SOURCE_DIR}/src/framework/world.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/include/framework/actor.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/framework/actor.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/include/framework/object.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/framework/object.cpp
+
 
 )
 

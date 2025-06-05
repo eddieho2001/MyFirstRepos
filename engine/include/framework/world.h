@@ -1,5 +1,6 @@
 #pragma once
 #include<quill/Logger.h>
+#include<SFML/Graphics.hpp>
 #include "framework/core.h"
 
 namespace ly {
@@ -12,7 +13,7 @@ namespace ly {
 		void BeginPlayInternal();
 		void TickInternal(float deltaTime);
 		virtual ~World();
-
+		void Render(sf::RenderWindow& window);
 		template<typename actorType>
 		weak<actorType> SpawnActor() {
 			shared<actorType> newActor{ new actorType{this} };

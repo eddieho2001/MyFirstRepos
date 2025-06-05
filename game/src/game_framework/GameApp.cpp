@@ -15,5 +15,17 @@ namespace ly {
 	{
 		weak<World> newWorld = RoadWorld<World>();
 		newWorld.lock()->SpawnActor<Actor>();
+		actorToDestory = newWorld.lock()->SpawnActor<Actor>();
+		actorToDestory.lock()->SetTexture("D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/game/assets/SpaceShooterRedux/PNG/playerShip2_green.png");
+		counter = 0;
+	}
+	void GameApp::Tick(float deltaTime)
+	{
+		counter += deltaTime;
+		if (counter > 2.f) {
+			if (actorToDestory.expired()) {
+				actorToDestory.lock()->Destory();
+			}
+		}
 	}
 };

@@ -6,11 +6,12 @@
 namespace ly {
 
 	struct game_config {
-		unsigned width{1024};
-		unsigned height{ 780 };
+		unsigned width{600};
+		unsigned height{ 980 };
 		float defaultFrameRate = 60.f;
 		std::string title{ "Light Years" };
 		std::string version{ "1.0.0" };
+		std::uint32_t windowStyle = sf::Style::Titlebar | sf::Style::Close;
 	};
 
 	class World;

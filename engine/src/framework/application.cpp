@@ -6,7 +6,7 @@
 #include<quill/sinks/ConsoleSink.h>
 
 ly::Application::Application(const game_config& config) :
-	mWindow{ sf::RenderWindow{ sf::VideoMode({config.width, config.height}), config.title} },
+	mWindow{ sf::RenderWindow{ sf::VideoMode({config.width, config.height}), config.title, config.windowStyle} },
 	mTargetFrameRate{ config.defaultFrameRate },
 	mTickClock{},
 	currentWorld {nullptr}//default ctor
@@ -52,12 +52,17 @@ void ly::Application::Run()
 
 void ly::Application::Render()
 {
+	/*
 	sf::CircleShape mCircle;
 	mCircle.setRadius(mWindow.getSize().y / 8.f);
 	//mCircle.setOrigin()
 	mCircle.setPosition(sf::Vector2f(mWindow.getSize().x / 2.f, mWindow.getSize().y / 2.f));
 	mCircle.setFillColor(sf::Color::Cyan);
 	mWindow.draw(mCircle);
+	*/
+	if (currentWorld) {
+		currentWorld->Render(mWindow);
+	}
 }
 
 void ly::Application::Tick(float deltaTime)

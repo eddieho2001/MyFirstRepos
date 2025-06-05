@@ -1,6 +1,6 @@
 #include "framework/world.h"
 #include "framework/actor.h"
-
+#include<SFML/Graphics.hpp>
 #include<quill/Frontend.h>
 #include<quill/LogMacros.h>
 #include<quill/sinks/ConsoleSink.h>
@@ -31,17 +31,33 @@ void ly::World::TickInternal(float deltaTime)
 	}
 
 	mPendingActors.clear();
-	for (shared<Actor> actor : mActors) {
-		actor->Tick(deltaTime);
+	for (auto iter = mActors.begin(); iter != mActors.end();) {
+		if (iter->get()->IsPendingDestory()) {
+			iter = mActors.erase(iter);
+		}
+		else {
+			iter->get()->Tick(deltaTime);
+			++iter;
+		}
 	}
 
-
+	/*
+	for (shared<Actor> actor : mActors) {
+		actor->Tick(deltaTime);
+	}*/
 
 	Tick(deltaTime);
 }
 
 ly::World::~World()
 {
+}
+
+void ly::World::Render(sf::RenderWindow& window)
+{
+	for (auto& actor : mActors) {
+		actor->Render(window);
+	}
 }
 
 void ly::World::BeginPlay()
