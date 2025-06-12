@@ -2842,3 +2842,72 @@ events:
         
       exitCode: 1
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Applicatons/MinGW/winlibs-x86_64-posix-seh-gcc-12.1.0-llvm-14.0.4-mingw-w64msvcrt-10.0.0-r2/mingw64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "build/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "build/_deps/sfml-src/CMakeLists.txt:41 (include)"
+    checks:
+      - "Check size of void*"
+    directories:
+      source: "D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-nkmxuj"
+      binary: "D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-nkmxuj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+      CMAKE_OSX_SYSROOT: ""
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/_deps/sfml-src/cmake/CompilerOptionsOverride.cmake"
+    buildResult:
+      variable: "HAVE_SIZEOF_VOID_PTR"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-nkmxuj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_56414.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Build started 6/6/2025 3:43:27 pm.
+        Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\cmTC_56414.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_56414.dir\\Debug\\".
+          Creating directory "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\Debug\\".
+          Creating directory "cmTC_56414.dir\\Debug\\cmTC_56414.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_56414.dir\\Debug\\cmTC_56414.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56414.dir\\Debug\\\\" /Fd"cmTC_56414.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\SIZEOF_VOID_PTR.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31937 for x64
+          SIZEOF_VOID_PTR.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56414.dir\\Debug\\\\" /Fd"cmTC_56414.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\SIZEOF_VOID_PTR.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\Debug\\cmTC_56414.exe" /INCREMENTAL /ILK:"cmTC_56414.dir\\Debug\\cmTC_56414.ilk" /NOLOGO /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-nkmxuj/Debug/cmTC_56414.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/build/CMakeFiles/CMakeScratch/TryCompile-nkmxuj/Debug/cmTC_56414.lib" /MACHINE:X64  /machine:x64 cmTC_56414.dir\\Debug\\SIZEOF_VOID_PTR.obj
+          cmTC_56414.vcxproj -> D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\Debug\\cmTC_56414.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\Debug\\cmTC_56414.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_56414.dir\\Debug\\cmTC_56414.tlog\\cmTC_56414.write.1u.tlog" "cmTC_56414.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\Debug\\cmTC_56414.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_56414.dir\\Debug\\cmTC_56414.tlog\\cmTC_56414.write.1u.tlog" "cmTC_56414.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\Debug\\cmTC_56414.exe" "D:\\MyDocs\\Projects\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_56414.dir\\Debug\\cmTC_56414.tlog\\cmTC_56414.write.1u.tlog" "cmTC_56414.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_56414.dir\\Debug\\cmTC_56414.tlog\\unsuccessfulbuild".
+          Touching "cmTC_56414.dir\\Debug\\cmTC_56414.tlog\\cmTC_56414.lastbuildstate".
+        Done Building Project "D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkmxuj\\cmTC_56414.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.69
+        
+      exitCode: 0
+...

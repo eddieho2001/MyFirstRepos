@@ -4,11 +4,12 @@
 #include<quill/sinks/ConsoleSink.h>
 
 ly::Actor::Actor(World* ptrOwningWorld, const std::string& texturePath)
-	:m_ptrOwningWorld{ ptrOwningWorld }, m_Texture{}, m_Sprite{}
+	:m_ptrOwningWorld{ ptrOwningWorld }, m_Texture{}, mSprite{}
 {
 	mlogger = quill::Frontend::create_or_get_logger("actor", quill::Frontend::create_or_get_sink<quill::ConsoleSink>("sink_id_1"));
 	mlogger->set_immediate_flush(true);
 	SetTexture(texturePath);
+	
 	
 }
 
@@ -37,14 +38,32 @@ ly::Actor::~Actor()
 
 void ly::Actor::SetTexture(const std::string& texturePath)
 {
+	LOG_INFO(mlogger, "Input image path = {}", texturePath);
 	m_Texture.loadFromFile(texturePath);
-	int x = m_Texture.getSize().x;
-	int y = m_Texture.getSize().y;
-	m_Sprite.setTextureRect(sf::IntRect{ sf::Vector2i{} , sf::Vector2i{ x,   y} });
+	int textureWidth = m_Texture.getSize().x;
+	int textureHeight = m_Texture.getSize().y;
+	mSprite.setTexture(m_Texture);
+	
+	
+	mSprite.setTextureRect(sf::IntRect{sf::Vector2i{} , sf::Vector2i{textureWidth,   textureHeight}});
 
 }
 
 void ly::Actor::Render(sf::RenderWindow& window)
 {
-	window.draw(m_Sprite);
+	window.draw(mSprite);
 }
+/*
+ly::LySprite::LySprite()
+{
+	
+}
+
+void ly::LySprite::setTexture(const sf::Texture& texture) {
+	mSprite = std::make_unique<sf::Sprite>(texture);
+}
+
+sf::Sprite& ly::LySprite::getSprite() {
+	return *mSprite;
+}
+*/

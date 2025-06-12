@@ -1,6 +1,7 @@
 #include "game_framework/GameApp.h"
 #include "framework/world.h"
 #include "framework/actor.h"
+#include<filesystem>
 
 ly::Application* GetApplication() {
 	//static ly::Application app;
@@ -16,7 +17,8 @@ namespace ly {
 		weak<World> newWorld = RoadWorld<World>();
 		newWorld.lock()->SpawnActor<Actor>();
 		actorToDestory = newWorld.lock()->SpawnActor<Actor>();
-		actorToDestory.lock()->SetTexture("D:/MyDocs/GameDev/Udemy/LearnC++AndMakeaGameFromScratch/Section06/LightYearsGameProj/game/assets/SpaceShooterRedux/PNG/playerShip2_green.png");
+		//std::string path = std::filesystem::current_path().string() + "\\" + "playerShip2_green.png";
+		actorToDestory.lock()->SetTexture("D:\\MyDocs\\GameDev\\Udemy\\LearnC++AndMakeaGameFromScratch\\Section06\\LightYearsGameProj\\resource\\assets\\SpaceShooterRedux\\PNG\\playerShip1_blue.png");
 		counter = 0;
 	}
 	void GameApp::Tick(float deltaTime)

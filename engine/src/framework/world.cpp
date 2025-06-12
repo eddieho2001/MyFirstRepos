@@ -41,6 +41,7 @@ void ly::World::TickInternal(float deltaTime)
 		}
 	}
 
+	
 	/*
 	for (shared<Actor> actor : mActors) {
 		actor->Tick(deltaTime);
